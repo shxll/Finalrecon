@@ -133,10 +133,6 @@ def banner():
  \ \_\ \_\\ \_____\\ \_____\\ \_____\\ \_\\"\_\
   \/_/ /_/ \/_____/ \/_____/ \/_____/ \/_/ \/_/'''
 	print(f'{G}{art}{W}\n')
-	print(f'{G}[>]{C} Created By   :{W} thewhiteh4t')
-	print(f'{G} |--->{C} Twitter   :{W} {twitter_url}')
-	print(f'{G} |--->{C} Community :{W} {comms_url}')
-	print(f'{G}[>]{C} Version      :{W} {VERSION}\n')
 
 
 def save_key(key_string):
