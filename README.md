@@ -26,7 +26,7 @@ python3 finalrecon.py --help
 ```
 ## full scan
 ```bash
-python3 fianlrecon.py -d DOMINIOAQUI.COM --full
+python3 finalrecon.py -d DOMINIOAQUI.COM --full
 ```
 
 ### BOM PROVEITO!
