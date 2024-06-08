@@ -9,6 +9,7 @@ sudo apt install python3-venv
 ```bash
 sudo python3 -m python3-venv
 source python3-venv/bin/activate
+> deactivate para desativar a venv
 ```
 
 # Instale a dependências:
