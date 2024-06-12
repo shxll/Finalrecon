@@ -237,7 +237,6 @@ try:
 		from modules.dns import dnsrec
 		from modules.sslinfo import cert
 		from modules.portscan import scan
-		from modules.dirrec import hammer
 		from modules.crawler import crawler
 		from modules.headers import headers
 		from modules.subdom import subdomains
@@ -299,11 +298,6 @@ try:
 		from modules.portscan import scan
 		log_writer('Starting port scan...')
 		scan(ip, out_settings, data, threads)
-
-	if dirrec:
-		from modules.dirrec import hammer
-		log_writer('Starting dir enum...')
-		hammer(target, threads, tout, wdlist, redir, sslv, out_settings, data, filext)
 
 	if not any([full, headinfo, sslinfo, whois, crawl, dns, subd, wback, pscan, dirrec]):
 		print(f'\n{R}[-] Error : {C}At least One Argument is Required with URL{W}')
