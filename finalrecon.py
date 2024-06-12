@@ -251,7 +251,6 @@ try:
 			subdomains(hostname, tout, out_settings, data, conf_path)
 		scan(ip, out_settings, data, pscan_threads)
 		crawler(target, protocol, netloc, out_settings, data)
-		hammer(target, threads, tout, wdlist, redir, sslv, out_settings, data, filext)
 		timetravel(target, data, out_settings)
 
 	if headinfo:
