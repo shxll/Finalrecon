@@ -128,27 +128,3 @@ def dir_output(output, data):
 		fname = f'{output["directory"]}/directory_enum.{output["format"]}'
 		output['file'] = fname
 		export(output, data)
-
-
-def hammer(target, threads, tout, wdlist, redir, sslv, output, data, filext):
-	print(f'\n{Y}[!] Starting Directory Enum...{W}\n')
-	print(f'{G}[+] {C}Threads          : {W}{threads}')
-	print(f'{G}[+] {C}Timeout          : {W}{tout}')
-	print(f'{G}[+] {C}Wordlist         : {W}{wdlist}')
-	print(f'{G}[+] {C}Allow Redirects  : {W}{redir}')
-	print(f'{G}[+] {C}SSL Verification : {W}{sslv}')
-	with open(wdlist, 'r') as wordlist:
-		num_words = sum(1 for i in wordlist)
-	print(f'{G}[+] {C}Wordlist Size    : {W}{num_words}')
-	print(f'{G}[+] {C}File Extensions  : {W}{filext}\n')
-	if len(filext) != 0:
-		total_num_words = num_words * (len(filext.split(',')) + 1)
-	else:
-		total_num_words = num_words
-
-	loop = asyncio.new_event_loop()
-	asyncio.set_event_loop(loop)
-	loop.run_until_complete(run(target, threads, tout, wdlist, redir, sslv, filext, total_num_words))
-	dir_output(output, data)
-	loop.close()
-	log_writer('[dirrec] Completed')
