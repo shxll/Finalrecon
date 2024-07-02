@@ -15,8 +15,8 @@ source python3-venv/bin/activate
 # Instale a dependências:
 
 ```bash
-git clone https://github.com/shxll/finalrecon.git
-cd finalrecon/
+git clone https://github.com/shxll/Finalrecon.git
+cd Finalrecon/
 pip3 install -r requirements.txt
 ```
 
@@ -24,10 +24,26 @@ pip3 install -r requirements.txt
 ```bash
 python3 finalrecon.py --help
 ```
+
 ## full scan
 ```bash
 python3 finalrecon.py --url DOMINIOAQUI.COM --full
 ```
+
+# Uso (problema de permissão e dependências)
+
+```bash
+sudo su
+# senha do root
+cd Finalrecon/
+pip3 install -r requirements.txt
+python3 finalrecon.py --url DOMINIOAQUI.COM --full
+```
+# Interface
+
+<p align = "center">
+  <img src = "https://raw.githubusercontent.com/shxll/Finalrecon/main/Image/finalrecon.png">
+</p>
 
 ### BOM PROVEITO!
 
