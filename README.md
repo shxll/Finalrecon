@@ -33,6 +33,7 @@ python3 finalrecon.py --url DOMINIOAQUI.COM --full
 # Uso (problema de permissão e dependências)
 
 ```bash
+# rode no root do terminal com a Venv ativada.
 sudo su
 # senha do root
 cd Finalrecon/
