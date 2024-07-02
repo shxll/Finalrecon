@@ -1,3 +1,5 @@
+FinalRecon é uma ferramenta completa de reconhecimento automático da web escrita em python. O objetivo do FinalRecon é fornecer uma visão geral do alvo em um curto espaço de tempo, mantendo a precisão dos resultados. Em vez de executar várias ferramentas uma após a outra, ele pode fornecer resultados semelhantes, mantendo as dependências pequenas.
+
 # Instalação 
 
 ```bash
