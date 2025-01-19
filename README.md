@@ -3,7 +3,7 @@ FinalRecon é uma ferramenta completa de reconhecimento automático da web escri
 # Instalação 
 
 ```bash
-sudo apt install python3-venv
+sudo apt install python3-venv git
 ```
 
 # Crie uma Venv no Python e ative:
